@@ -16,10 +16,19 @@ public class Adress {
     private String district;
     private String stress;
     private String apartment;
+    private Integer apartmentId;
     private Integer doorNo;
 
     public String getCity() {
         return city;
+    }
+
+    public Integer getApartmentId() {
+        return apartmentId;
+    }
+
+    public void setApartmentId(Integer apartmentId) {
+        this.apartmentId = apartmentId;
     }
 
     public void setCity(String city) {
