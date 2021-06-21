@@ -172,6 +172,8 @@ public class FollowSystem {
         String plate=readConsoleData();
         
         
+        
+        
         Car  car = findReservedCar(plate);
         if(car == null){
             System.out.println( plate+ " PLAKALI ARAÇ SİSTEMDE BULUNAMADI...");
@@ -310,11 +312,11 @@ public class FollowSystem {
                 System.out.println(customer.getCustomerName() + " "+ customer.getCustomerSurname() + "KAÇ ADET ARAÇ KİRALAYACAK ? :  ");
                 Integer countOfRentCar=Integer.parseInt(readConsoleData());
 
-                System.out.println("REZERVASYON BAŞLANGIÇ TARİHİNİ GİRİNİZ  [DD/MM/YYYY]  : ");
+                System.out.println("REZERVASYON BAŞLANGIÇ TARİHİNİ GİRİNİZ  [YYYY-MM-DD]  : ");
                 Date reservationBeginDate = Date.valueOf(readConsoleData());
                 reservation.setRezervBeginDate(reservationBeginDate);
 
-                System.out.println("REZERVASYON BAŞLANGIÇ TARİHİNİ GİRİNİZ  [DD/MM/YYYY]  : ");
+                System.out.println("REZERVASYON BAŞLANGIÇ TARİHİNİ GİRİNİZ  [YYYY-MM-DD]  : ");
                 Date reservationEndDate = Date.valueOf(readConsoleData());
                 reservation.setRezervEndDate(reservationEndDate);
 
